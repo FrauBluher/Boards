@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/Users/Marx/Documents/eagle/BLDC Driver/BLDC driver board.brd
+Job           : D:/Boards/eagle/BLDC Driver/BLDC driver board.brd
 
-Start at      : 17:11:15 (9/23/2012)
-End at        : 17:11:16 (9/23/2012)
-Elapsed time  : 00:00:00
+Start at      : 12:46:50 (11/16/2012)
+End at        : 12:46:51 (11/16/2012)
+Elapsed time  : 00:00:01
 
-Signals       :    36   RoutingGrid: 50 mil  Layers: 2
-Connections   :    76   predefined:  35 ( 3 Vias )
+Signals       :    43   RoutingGrid: 50 mil  Layers: 2
+Connections   :   232   predefined:  142 ( 49 Vias )
 
-Router memory :   27412
+Router memory :   17040
 
 Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
+Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:01  00:00:00  00:00:00
 Number of Ripups  :         0         0         0         0         0         0
-max. Level        :         0         0         0         0         0         0
+max. Level        :         0         1         0         0         0         0
 max. Total        :         0         0         0         0         0         0
 
-Routed            :         4        39        39        39        39        39
-Vias              :         0        33         8         6         6         6
-Resolution        :    51.3 %    97.4 %    97.4 %    97.4 %    97.4 %    97.4 %
+Routed            :        10        36        36        36        36        36
+Vias              :         0        17         4         6         6         6
+Resolution        :    65.5 %    76.7 %    76.7 %    76.7 %    76.7 %    76.7 %
 
-Final             : 97.4% finished
+Final             : 75.8% finished. Polygons may have fallen apart.
