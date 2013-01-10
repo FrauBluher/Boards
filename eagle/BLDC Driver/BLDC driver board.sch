@@ -3387,12 +3387,10 @@ Grid 5.00 mm&lt;p&gt;
 <part name="R8" library="CMPE118lib" deviceset="RESISTOR" device="1206" value="3.3"/>
 <part name="GND15" library="ASL" deviceset="GND" device=""/>
 <part name="R13" library="ASL" deviceset="RESISTOR" device="0805-RES" value="470"/>
-<part name="R12" library="ASL" deviceset="RESISTOR" device="0805-RES" value="3.16"/>
+<part name="R12" library="ASL" deviceset="RESISTOR" device="0805-RES" value="3.16k"/>
 <part name="R11" library="ASL" deviceset="RESISTOR" device="0805-RES" value="10k"/>
-<part name="R9" library="ASL" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="LED3" library="ASL" deviceset="LED" device="1206"/>
 <part name="R18" library="ASL" deviceset="RESISTOR" device="0805-RES" value="330"/>
-<part name="GND16" library="ASL" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3474,10 +3472,8 @@ Grid 5.00 mm&lt;p&gt;
 <instance part="R13" gate="G$1" x="-27.94" y="-48.26" rot="MR270"/>
 <instance part="R12" gate="G$1" x="-27.94" y="-63.5" rot="MR270"/>
 <instance part="R11" gate="G$1" x="-27.94" y="-73.66" rot="MR270"/>
-<instance part="R9" gate="G$1" x="-5.08" y="-15.24" rot="MR270"/>
-<instance part="LED3" gate="G$1" x="-12.7" y="-20.32" rot="R270"/>
-<instance part="R18" gate="G$1" x="-22.86" y="-20.32" rot="MR180"/>
-<instance part="GND16" gate="1" x="-33.02" y="-33.02"/>
+<instance part="LED3" gate="G$1" x="0" y="-22.86" rot="MR270"/>
+<instance part="R18" gate="G$1" x="12.7" y="-22.86" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -3613,12 +3609,6 @@ Grid 5.00 mm&lt;p&gt;
 <wire x1="25.4" y1="-40.64" x2="20.32" y2="-40.64" width="0.2032" layer="91"/>
 <junction x="20.32" y="-40.64"/>
 <junction x="20.32" y="-43.18"/>
-</segment>
-<segment>
-<pinref part="R18" gate="G$1" pin="1"/>
-<pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="-27.94" y1="-20.32" x2="-33.02" y2="-20.32" width="0.2032" layer="91"/>
-<wire x1="-33.02" y1="-20.32" x2="-33.02" y2="-30.48" width="0.2032" layer="91"/>
 </segment>
 </net>
 <net name="OUTPUTA" class="0">
@@ -3844,9 +3834,10 @@ Grid 5.00 mm&lt;p&gt;
 <label x="17.78" y="-38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-10.16" width="0.2032" layer="91"/>
 <label x="-5.08" y="-5.08" size="1.778" layer="95"/>
-<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-22.86" width="0.2032" layer="91"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="-5.08" y1="-22.86" x2="-2.54" y2="-22.86" width="0.2032" layer="91"/>
 </segment>
 <segment>
 <pinref part="DRV8301" gate="U1" pin="EN_GATE"/>
@@ -4249,21 +4240,11 @@ Grid 5.00 mm&lt;p&gt;
 <wire x1="-17.78" y1="-45.72" x2="25.4" y2="-45.72" width="0.2032" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="-10.16" y1="-20.32" x2="-5.08" y2="-20.32" width="0.2032" layer="91"/>
-<pinref part="DRV8301" gate="U1" pin="PWRGD"/>
-<wire x1="25.4" y1="-27.94" x2="12.7" y2="-27.94" width="0.2032" layer="91"/>
-<wire x1="12.7" y1="-27.94" x2="12.7" y2="-20.32" width="0.2032" layer="91"/>
-<wire x1="12.7" y1="-20.32" x2="-5.08" y2="-20.32" width="0.2032" layer="91"/>
-</segment>
-</net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="LED3" gate="G$1" pin="C"/>
 <pinref part="R18" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="-22.86" x2="7.62" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -4274,6 +4255,15 @@ Grid 5.00 mm&lt;p&gt;
 <wire x1="63.5" y1="132.08" x2="68.58" y2="132.08" width="0.2032" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="132.08" x2="68.58" y2="132.08" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="-22.86" x2="20.32" y2="-22.86" width="0.2032" layer="91"/>
+<wire x1="20.32" y1="-22.86" x2="20.32" y2="-27.94" width="0.2032" layer="91"/>
+<pinref part="DRV8301" gate="U1" pin="PWRGD"/>
+<wire x1="20.32" y1="-27.94" x2="25.4" y2="-27.94" width="0.2032" layer="91"/>
 </segment>
 </net>
 </nets>

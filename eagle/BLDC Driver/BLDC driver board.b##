@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -861,7 +861,7 @@ design rules under a new name.</description>
 <element name="R13" library="ASL" package="0805" value="470" x="10.16" y="59.69" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.112" y="61.4045" size="1.27" layer="25" ratio="15" rot="R180"/>
 </element>
-<element name="R12" library="ASL" package="0805" value="3.16" x="8.509" y="59.69" smashed="yes" rot="R270">
+<element name="R12" library="ASL" package="0805" value="3.16k" x="8.509" y="59.69" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.2555" y="56.388" size="1.27" layer="25" ratio="15" rot="R90"/>
 </element>
 <element name="R11" library="ASL" package="0805" value="10k" x="6.7818" y="57.8866" smashed="yes" rot="R270">
