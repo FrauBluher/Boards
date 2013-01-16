@@ -1578,6 +1578,11 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/39662c.pdf</description>
 <label x="91.44" y="17.78" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="VDDPLL"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="VDD"/>
+<wire x1="53.34" y1="68.58" x2="50.8" y2="68.58" width="0.2032" layer="91"/>
+<label x="45.72" y="68.58" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$7" class="0">
 <segment>

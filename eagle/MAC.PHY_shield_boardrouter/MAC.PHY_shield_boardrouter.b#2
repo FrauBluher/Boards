@@ -726,12 +726,6 @@ design rules under a new name.</description>
 <wire x1="32.9692" y1="50.165" x2="38.608" y2="50.165" width="0.254" layer="1"/>
 <wire x1="38.9382" y1="12.6238" x2="38.9382" y2="16.6878" width="0.254" layer="1"/>
 <wire x1="38.9382" y1="16.6878" x2="49.276" y2="27.0256" width="0.254" layer="1"/>
-<contactref element="IC1" pad="28"/>
-<wire x1="36.83" y1="13.97" x2="36.83" y2="13.2588" width="0.254" layer="16"/>
-<wire x1="36.83" y1="13.2588" x2="35.56" y2="11.9888" width="0.254" layer="16"/>
-<wire x1="35.56" y1="11.9888" x2="29.7434" y2="11.9888" width="0.254" layer="16"/>
-<wire x1="29.7434" y1="11.9888" x2="29.21" y2="12.5222" width="0.254" layer="16"/>
-<wire x1="29.21" y1="12.5222" x2="29.21" y2="13.97" width="0.254" layer="16"/>
 <wire x1="27.1272" y1="46.86" x2="22.86" y2="46.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
