@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -551,7 +551,7 @@ design rules under a new name.</description>
 <wire x1="28.448" y1="31.0405" x2="28.0205" y2="31.468" width="0.254" layer="16"/>
 <wire x1="28.0205" y1="31.468" x2="25.908" y2="31.468" width="0.254" layer="16"/>
 </signal>
-<signal name="GND" airwireshidden="yes">
+<signal name="GND">
 <contactref element="U$3" pad="7"/>
 <contactref element="U$3" pad="10"/>
 <contactref element="IC1" pad="P$2"/>
@@ -579,7 +579,7 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="P$15"/>
 <contactref element="U$1" pad="P$1"/>
 <contactref element="U$1" pad="P$2"/>
-<polygon width="0.254" layer="16" isolate="0.254">
+<polygon width="0.254" layer="16" isolate="0.3048">
 <vertex x="7.62" y="43.18"/>
 <vertex x="58.42" y="43.18"/>
 <vertex x="58.42" y="10.16"/>
@@ -597,8 +597,9 @@ design rules under a new name.</description>
 <wire x1="29.9085" y1="17.2085" x2="27.94" y2="15.24" width="0.254" layer="1"/>
 <wire x1="27.94" y1="15.24" x2="20.1295" y2="15.24" width="0.254" layer="1"/>
 <wire x1="20.1295" y1="15.24" x2="19.6215" y2="14.732" width="0.254" layer="1"/>
+<wire x1="36.04" y1="30.97" x2="27.94" y2="35.56" width="0" layer="19" extent="16-16"/>
 <wire x1="57.658" y1="32.385" x2="55.118" y2="32.385" width="0" layer="19" extent="1-1"/>
-<wire x1="27.94" y1="35.56" x2="36.04" y2="30.97" width="0" layer="19" extent="16-16"/>
+<wire x1="45.44" y1="30.97" x2="45.44" y2="27.16" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$1">
 <contactref element="C2" pad="1"/>
@@ -918,74 +919,6 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="P$17"/>
 </signal>
 </signals>
-<errors>
-<approved hash="1,20,0fadc88dc9590e79"/>
-<approved hash="1,20,1570965096b11591"/>
-<approved hash="1,20,50b99b59986a538a"/>
-<approved hash="1,20,9aa0954094279bc7"/>
-<approved hash="1,20,5bba945a94195bf9"/>
-<approved hash="1,20,13b0925093711291"/>
-<approved hash="1,20,5abd935d94735d93"/>
-<approved hash="1,20,d881c7a1c7c7d8e7"/>
-<approved hash="1,20,95ba4a9a46e299c2"/>
-<approved hash="1,20,146ce34ce2b71597"/>
-<approved hash="1,20,11e34303402d12cd"/>
-<approved hash="1,20,94e393c390b59795"/>
-<approved hash="4,1,1784350e59506ac9"/>
-<approved hash="4,1,69b92664c7cdc19e"/>
-<approved hash="4,1,5cd77c9544481c19"/>
-<approved hash="4,1,22869f47723aa375"/>
-<approved hash="4,1,a8486a152694a507"/>
-<approved hash="4,1,5b08954c63220577"/>
-<approved hash="4,1,c971235626efc7c0"/>
-<approved hash="4,1,cbf322dc2515cb6a"/>
-<approved hash="4,1,c26a2b5d21e0dfc7"/>
-<approved hash="4,1,c61e2a812fe4fb63"/>
-<approved hash="4,16,1784350e59506ac9"/>
-<approved hash="4,16,0b17c4e606d5d5ee"/>
-<approved hash="4,16,a599c4734f11e00c"/>
-<approved hash="4,16,170f369bc2a738c5"/>
-<approved hash="4,16,0b659c9baaa829e2"/>
-<approved hash="4,16,fb659a89117abf23"/>
-<approved hash="4,16,b722e15b58392f3c"/>
-<approved hash="4,16,5b67fabeb54c0320"/>
-<approved hash="4,16,69b92664c7cdc19e"/>
-<approved hash="4,16,5d330282f5e58e61"/>
-<approved hash="4,16,3b4822464333f781"/>
-<approved hash="4,16,5cd77c9544481c19"/>
-<approved hash="4,16,996c46e1c6eb1966"/>
-<approved hash="4,16,8be57368f3720bff"/>
-<approved hash="4,16,651e5293d29de510"/>
-<approved hash="4,16,5e459738e2321a69"/>
-<approved hash="4,16,22869f47723aa375"/>
-<approved hash="4,16,2f9498107aac06c7"/>
-<approved hash="4,16,d29b972bf5aef040"/>
-<approved hash="4,16,a8486a152694a507"/>
-<approved hash="4,16,5b08954c63220577"/>
-<approved hash="4,16,c971235626efc7c0"/>
-<approved hash="4,16,c26a2b5d21e0dfc7"/>
-<approved hash="4,16,cbf322dc2515cb6a"/>
-<approved hash="4,16,c61e2a812fe4fb63"/>
-<approved hash="4,16,6ffa7746f743efff"/>
-<approved hash="4,16,f5c6f993799675c3"/>
-<approved hash="4,16,cea14aaea86c0cb9"/>
-<approved hash="4,16,903e4923c65c8ca2"/>
-<approved hash="4,16,e280ea4d6a486285"/>
-<approved hash="4,16,0cceade1b6e6d4bb"/>
-<approved hash="4,16,72947a61fa64f291"/>
-<approved hash="4,16,0bc3ad56168889db"/>
-<approved hash="4,16,9197fb1fd8148b91"/>
-<approved hash="4,16,640a8d19027be800"/>
-<approved hash="4,16,28317ee4fc82a99b"/>
-<approved hash="4,16,19b14f64ce9e9b2f"/>
-<approved hash="4,16,eb88d1e52f5f1056"/>
-<approved hash="5,16,4fcb02f40f005ac5"/>
-<approved hash="5,16,8940d874bf9b7554"/>
-<approved hash="5,16,c4be3a0b9a998cc4"/>
-<approved hash="5,16,6fc9c71cb1fb8cd3"/>
-<approved hash="5,16,accd97d13e593cdb"/>
-<approved hash="5,16,accd97d13e593cdb"/>
-</errors>
 </board>
 </drawing>
 </eagle>
