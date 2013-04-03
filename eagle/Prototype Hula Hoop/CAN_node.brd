@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -766,11 +766,11 @@ design rules under a new name.</description>
 <wire x1="40.3352" y1="16.256" x2="40.4368" y2="16.3576" width="0.254" layer="1"/>
 <wire x1="40.4368" y1="16.3576" x2="43.9688" y2="16.3576" width="0.254" layer="1"/>
 <wire x1="43.9688" y1="16.3576" x2="44.2976" y2="16.0288" width="0.254" layer="1"/>
-<wire x1="59.2582" y1="34.2502" x2="69.599" y2="33.655" width="0" layer="19" extent="1-1"/>
 <wire x1="43.9688" y1="16.3576" x2="43.9688" y2="18.388" width="0.254" layer="1"/>
 <wire x1="43.9688" y1="18.388" x2="44.4276" y2="18.8468" width="0.254" layer="1"/>
 <wire x1="44.4276" y1="18.8468" x2="44.4276" y2="21.3868" width="0.254" layer="1"/>
 <wire x1="44.4276" y1="21.3868" x2="44.5292" y2="21.4884" width="0.254" layer="1"/>
+<wire x1="59.2582" y1="34.2502" x2="69.599" y2="33.655" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC5V0" class="1">
 <contactref element="U3" pad="P$2"/>
