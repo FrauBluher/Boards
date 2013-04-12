@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3909,7 +3909,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="VBATT" width="0" drill="0">
+<clearance class="0" value="0.508"/>
+</class>
+<class number="1" name="V_NEG" width="0" drill="0">
+<clearance class="1" value="0.508"/>
 </class>
 </classes>
 <parts>
