@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1568,7 +1568,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R5" library="ASL" deviceset="RESISTOR" device="0805-RES" value="49.9"/>
 <part name="R6" library="ASL" deviceset="RESISTOR" device="0805-RES" value="49.9"/>
 <part name="R7" library="ASL" deviceset="RESISTOR" device="0805-RES" value="49.9"/>
-<part name="U$4" library="ASL" deviceset="FERRITE_BEAD" device=""/>
+<part name="F1" library="ASL" deviceset="FERRITE_BEAD" device=""/>
 <part name="C3" library="ASL" deviceset="CAP" device="1206" value=".1 uF"/>
 <part name="C4" library="ASL" deviceset="CAP" device="1206" value=".1 uF"/>
 <part name="GND2" library="ASL" deviceset="GND" device=""/>
@@ -1605,7 +1605,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="R5" gate="G$1" x="177.8" y="48.26" rot="R270"/>
 <instance part="R6" gate="G$1" x="177.8" y="30.48" rot="R270"/>
 <instance part="R7" gate="G$1" x="177.8" y="20.32" rot="R270"/>
-<instance part="U$4" gate="G$1" x="215.9" y="71.12"/>
+<instance part="F1" gate="G$1" x="215.9" y="71.12"/>
 <instance part="C3" gate="G$1" x="215.9" y="58.42"/>
 <instance part="C4" gate="G$1" x="190.5" y="25.4"/>
 <instance part="GND2" gate="1" x="215.9" y="53.34"/>
@@ -1798,7 +1798,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="208.28" y1="63.5" x2="208.28" y2="53.34" width="0.2032" layer="91"/>
 <wire x1="208.28" y1="53.34" x2="177.8" y2="53.34" width="0.2032" layer="91"/>
 <junction x="177.8" y="53.34"/>
-<pinref part="U$4" gate="G$1" pin="2"/>
+<pinref part="F1" gate="G$1" pin="2"/>
 <junction x="215.9" y="63.5"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 </segment>
@@ -1850,7 +1850,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="-12.7" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="1"/>
+<pinref part="F1" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="78.74" x2="215.9" y2="81.28" width="0.2032" layer="91"/>
 <label x="215.9" y="83.82" size="1.778" layer="95"/>
 </segment>
