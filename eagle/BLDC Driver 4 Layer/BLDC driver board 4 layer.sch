@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3988,6 +3988,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R5" library="ASL" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R6" library="ASL" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R7" library="ASL" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R9" library="ASL" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
 </parts>
 <sheets>
 <sheet>
@@ -4065,6 +4066,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="R5" gate="G$1" x="63.5" y="129.54" rot="R90"/>
 <instance part="R6" gate="G$1" x="66.04" y="129.54" rot="R90"/>
 <instance part="R7" gate="G$1" x="68.58" y="129.54" rot="R90"/>
+<instance part="R9" gate="G$1" x="-5.08" y="-17.78"/>
 </instances>
 <busses>
 </busses>
@@ -4466,6 +4468,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="25.4" y1="-58.42" x2="20.32" y2="-58.42" width="0.2032" layer="91"/>
 <label x="15.24" y="-58.42" size="1.778" layer="95"/>
 <pinref part="U$1" gate="U1" pin="EN_GATE"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="-10.16" y1="-17.78" x2="-27.94" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="-17.78" x2="-27.94" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-27.94" y="-15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CRRNTSNS2" class="0">
@@ -4890,11 +4898,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <pinref part="U$2" gate="G$1" pin="PGC"/>
 <wire x1="22.86" y1="27.94" x2="0" y2="27.94" width="0.2032" layer="91"/>
-<wire x1="0" y1="27.94" x2="0" y2="-33.02" width="0.2032" layer="91"/>
+<wire x1="0" y1="27.94" x2="0" y2="-17.78" width="0.2032" layer="91"/>
+<wire x1="0" y1="-17.78" x2="0" y2="-33.02" width="0.2032" layer="91"/>
 <wire x1="0" y1="-33.02" x2="25.4" y2="-33.02" width="0.2032" layer="91"/>
 <pinref part="U$1" gate="U1" pin="FAULT'"/>
 <pinref part="U$2" gate="G$1" pin="PGC"/>
 <junction x="22.86" y="27.94"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<junction x="0" y="-17.78"/>
 </segment>
 </net>
 <net name="N$1" class="0">
