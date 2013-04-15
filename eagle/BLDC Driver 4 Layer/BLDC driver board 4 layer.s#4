@@ -4200,6 +4200,18 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <smd name="2" x="-2.0066" y="0" dx="3.5052" dy="5.08" layer="1" thermals="no"/>
 <text x="-2.7178" y="0.3048" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.8956" y="-1.6002" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="P$1" x="-2.794" y="1.651" drill="0.8" thermals="no"/>
+<pad name="P$2" x="-1.143" y="1.651" drill="0.8" thermals="no"/>
+<pad name="P$3" x="-1.143" y="0" drill="0.8" thermals="no"/>
+<pad name="P$4" x="-2.794" y="0" drill="0.8" thermals="no"/>
+<pad name="P$5" x="-2.8194" y="-1.6002" drill="0.8" thermals="no"/>
+<pad name="P$6" x="-1.143" y="-1.6002" drill="0.8" thermals="no"/>
+<pad name="P$7" x="1.143" y="1.651" drill="0.8" thermals="no"/>
+<pad name="P$8" x="2.794" y="1.651" drill="0.8" thermals="no"/>
+<pad name="P$9" x="1.143" y="0" drill="0.8" thermals="no"/>
+<pad name="P$10" x="2.794" y="0" drill="0.8" thermals="no"/>
+<pad name="P$11" x="2.794" y="-1.651" drill="0.8" thermals="no"/>
+<pad name="P$12" x="1.143" y="-1.651" drill="0.8" thermals="no"/>
 </package>
 </packages>
 <symbols>
@@ -4568,8 +4580,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 <device name="" package="SMT-REF">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="1" pad="1 P$7 P$8 P$9 P$10 P$11 P$12"/>
+<connect gate="G$1" pin="2" pad="2 P$1 P$2 P$3 P$4 P$5 P$6"/>
 </connects>
 <technologies>
 <technology name=""/>

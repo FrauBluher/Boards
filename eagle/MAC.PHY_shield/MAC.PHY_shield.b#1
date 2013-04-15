@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -116,7 +116,6 @@
 </layers>
 <board>
 <plain>
-<wire x1="13.8684" y1="8.89" x2="13.8938" y2="8.89" width="0" layer="20"/>
 <wire x1="18.1356" y1="15.7226" x2="35.0774" y2="15.7226" width="0" layer="20"/>
 <wire x1="35.0774" y1="15.7226" x2="35.5854" y2="15.4686" width="0" layer="20" curve="-90"/>
 <wire x1="35.5854" y1="15.4686" x2="35.5854" y2="15.3162" width="0" layer="20"/>
@@ -652,7 +651,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the tk
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -838,12 +837,12 @@ design rules under a new name.</description>
 </element>
 <element name="U$1" library="ASL" package="CANODE_SHIELD" value="CANODE_SHIELD" x="10.16" y="8.89" smashed="yes"/>
 <element name="IC1" library="ASL" package="SOIC28-W" value="ENC28J60" x="24.638" y="31.7754" smashed="yes" rot="R180">
-<attribute name="NAME" x="25.8725" y="35.1229" size="1.4224" layer="25" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="28.73" y="11.9454" size="1.4224" layer="27" ratio="15" rot="R180"/>
+<attribute name="NAME" x="24.4271" y="37.6425" size="1.4224" layer="25" ratio="15" rot="R270"/>
+<attribute name="VALUE" x="24.4746" y="33" size="1.4224" layer="27" ratio="15" rot="R270"/>
 </element>
 <element name="U$3" library="ASL" package="08B0-1X1T-06-F" value="MAGJACK" x="35.052" y="36.068" smashed="yes"/>
 <element name="C2" library="ASL" package="1206" value="10uF" x="32.0675" y="23.7744" smashed="yes" rot="R90">
-<attribute name="NAME" x="34.671" y="22.6949" size="1.4224" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="34.981" y="22.3649" size="1.4224" layer="25" ratio="10" rot="R90"/>
 </element>
 <element name="R2" library="ASL" package="0805" value="300" x="26.0604" y="19.2913" smashed="yes" rot="R180">
 <attribute name="NAME" x="24.8539" y="21.5773" size="1.4224" layer="25" ratio="15" rot="R180"/>
@@ -852,25 +851,25 @@ design rules under a new name.</description>
 <attribute name="NAME" x="56.4515" y="45.593" size="1.4224" layer="25" ratio="15" rot="R180"/>
 </element>
 <element name="R4" library="ASL" package="0805" value="49.9" x="43.2054" y="27.4066" smashed="yes" rot="R90">
-<attribute name="NAME" x="42.4434" y="26.2001" size="1.4224" layer="25" ratio="15" rot="R90"/>
+<attribute name="NAME" x="42.2334" y="26.1401" size="1.4224" layer="25" ratio="15" rot="R90"/>
 </element>
 <element name="R5" library="ASL" package="0805" value="49.9" x="43.2308" y="21.717" smashed="yes" rot="R270">
-<attribute name="NAME" x="41.3258" y="22.225" size="1.4224" layer="25" ratio="15" rot="R270"/>
+<attribute name="NAME" x="42.6658" y="19.975" size="1.4224" layer="25" ratio="15" rot="R270"/>
 </element>
 <element name="R6" library="ASL" package="0805" value="49.9" x="37.8206" y="21.7805" smashed="yes" rot="R90">
-<attribute name="NAME" x="38.862" y="20.1676" size="1.4224" layer="25" ratio="15" rot="R180"/>
+<attribute name="NAME" x="38.802" y="19.8276" size="1.4224" layer="25" ratio="15" rot="R180"/>
 </element>
 <element name="R7" library="ASL" package="0805" value="49.9" x="37.8079" y="27.4193" smashed="yes" rot="R270">
-<attribute name="NAME" x="36.9824" y="26.2763" size="1.4224" layer="25" ratio="15" rot="R90"/>
+<attribute name="NAME" x="36.7424" y="26.1563" size="1.4224" layer="25" ratio="15" rot="R90"/>
 </element>
 <element name="F1" library="ASL" package="1206" value="FERRITE_BEAD" x="47.9044" y="23.2029" smashed="yes" rot="R180">
-<attribute name="NAME" x="48.7299" y="21.8694" size="1.4224" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="50.2999" y="21.5094" size="1.4224" layer="25" ratio="10" rot="R180"/>
 </element>
 <element name="C3" library="ASL" package="1206" value=".1 uF" x="47.8917" y="26.4033" smashed="yes">
-<attribute name="NAME" x="47.0027" y="27.8638" size="1.4224" layer="25" ratio="10"/>
+<attribute name="NAME" x="45.3727" y="27.9538" size="1.4224" layer="25" ratio="10"/>
 </element>
 <element name="C4" library="ASL" package="1206" value=".1 uF" x="40.5511" y="31.0769" smashed="yes">
-<attribute name="NAME" x="40.1955" y="32.1564" size="1.4224" layer="25" ratio="10"/>
+<attribute name="NAME" x="40.1655" y="32.5464" size="1.4224" layer="25" ratio="10"/>
 </element>
 <element name="R8" library="ASL" package="0805" value="2.32 k" x="35.0647" y="32.8295" smashed="yes" rot="R270">
 <attribute name="NAME" x="33.9598" y="31.496" size="1.4224" layer="25" ratio="15" rot="R90"/>
@@ -879,10 +878,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="14.0081" y="48.3743" size="1.4224" layer="25" ratio="10" rot="R180"/>
 </element>
 <element name="C6" library="ASL" package="1206" value="33 pF" x="13.1191" y="42.7736" smashed="yes" rot="R180">
-<attribute name="NAME" x="18.3261" y="43.4086" size="1.4224" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="18.2761" y="42.8386" size="1.4224" layer="25" ratio="10" rot="R180"/>
 </element>
 <element name="C7" library="ASL" package="1206" value=".1 uF" x="49.4792" y="31.4198" smashed="yes" rot="R270">
-<attribute name="NAME" x="51.1302" y="31.8643" size="1.4224" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="51.0402" y="31.1043" size="1.4224" layer="25" ratio="10" rot="R270"/>
 </element>
 <element name="C8" library="ASL" package="1206" value=".1 uF" x="13.1191" y="38.6207" smashed="yes">
 <attribute name="NAME" x="11.7221" y="36.0172" size="1.4224" layer="25" ratio="10"/>
@@ -891,7 +890,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="56.7563" y="38.6207" size="1.4224" layer="25" ratio="10" rot="R180"/>
 </element>
 <element name="C10" library="ASL" package="1206" value=".1 uF" x="20.3073" y="18.1991" smashed="yes">
-<attribute name="NAME" x="23.4188" y="17.8181" size="1.4224" layer="25" ratio="10"/>
+<attribute name="NAME" x="23.8088" y="16.8781" size="1.4224" layer="25" ratio="10"/>
 </element>
 <element name="E$3" library="ASL" package="STAND-OFF-TIGHT" value="" x="13.843" y="55.118" smashed="yes"/>
 <element name="E$4" library="ASL" package="STAND-OFF-TIGHT" value="" x="56.388" y="55.118" smashed="yes"/>

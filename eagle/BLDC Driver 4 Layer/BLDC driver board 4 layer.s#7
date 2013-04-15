@@ -4088,6 +4088,22 @@ Grid 5.00 mm&lt;p&gt;
 <rectangle x1="-3.81" y1="-1.27" x2="3.81" y2="1.27" layer="29"/>
 <smd name="P$1" x="0" y="0" dx="1.27" dy="0.635" layer="1"/>
 </package>
+<package name="CPOL-RADIAL-6.3MM">
+<wire x1="-0.762" y1="1.297" x2="-1.778" y2="1.297" width="0.2032" layer="21"/>
+<circle x="0" y="-0.1" radius="3.15" width="0.3048" layer="21"/>
+<pad name="1" x="1.27" y="-0.1" drill="0.7" diameter="1.651" shape="square"/>
+<pad name="2" x="-1.27" y="-0.1" drill="0.7" diameter="1.651"/>
+<text x="-0.889" y="2.694" size="1.27" layer="25" ratio="15">&gt;Name</text>
+<text x="-1.905" y="-3.783" size="0.8128" layer="27">&gt;Value</text>
+</package>
+<package name="CPOL-RADIA-5MM">
+<wire x1="-0.762" y1="1.397" x2="-1.778" y2="1.397" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="2.5" width="0.3048" layer="21"/>
+<pad name="1" x="1.27" y="0" drill="0.7" diameter="1.651" shape="square"/>
+<pad name="2" x="-1.27" y="0" drill="0.7" diameter="1.651"/>
+<text x="-0.889" y="2.794" size="1.27" layer="25" ratio="15">&gt;Name</text>
+<text x="-1.905" y="-3.683" size="0.8128" layer="27">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DRV8302">
@@ -4154,6 +4170,18 @@ Grid 5.00 mm&lt;p&gt;
 <text x="7.62" y="-40.64" size="1.27" layer="94">&gt;NAME</text>
 <text x="7.62" y="-43.18" size="1.27" layer="94">&gt;VALUE</text>
 <pin name="GND" x="-2.54" y="-43.18" length="middle" rot="R90"/>
+</symbol>
+<symbol name="CAP_POL">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202" cap="flat"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341" cap="flat"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4228,6 +4256,34 @@ Grid 5.00 mm&lt;p&gt;
 </device>
 </devices>
 </deviceset>
+<deviceset name="CAP_POL" prefix="C" uservalue="yes">
+<description>&lt;b&gt;Capacitor Polarized&lt;/b&gt;
+These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in electrolytic and tantalum varieties. Always verify the external diameter of the through hole cap, it varies with capacity, voltage, and manufacturer. The EIA devices should be standard.</description>
+<gates>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CPOL-RADIAL-6.3MM">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+<technology name="POLA"/>
+</technologies>
+</device>
+<device name="YO" package="CPOL-RADIA-5MM">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -4266,8 +4322,6 @@ Grid 5.00 mm&lt;p&gt;
 <part name="GND3" library="ASL" deviceset="GND" device=""/>
 <part name="R1" library="ASL" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="GND9" library="ASL" deviceset="GND" device=""/>
-<part name="C7" library="ASL" deviceset="CAP_POL" device="E" value="4.7uF"/>
-<part name="C6" library="ASL" deviceset="CAP_POL" device="E" value="47uF"/>
 <part name="C8" library="ASL" deviceset="CAP" device="1206" value=".1uF"/>
 <part name="GND10" library="ASL" deviceset="GND" device=""/>
 <part name="U$6" library="SparkFun-Aesthetics" deviceset="VNEG" device=""/>
@@ -4308,6 +4362,8 @@ Grid 5.00 mm&lt;p&gt;
 <part name="U$2" library="ASL" deviceset="CAN_NODE_SHIELD_V3" device=""/>
 <part name="JP1" library="ASL" deviceset="M06" device="SMD-STRAIGHT"/>
 <part name="J1" library="ASL" deviceset="M02" device=""/>
+<part name="C7" library="pavlo" deviceset="CAP_POL" device="YO" value="4.7uF"/>
+<part name="C6" library="pavlo" deviceset="CAP_POL" device="" value="47uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -4340,8 +4396,6 @@ Grid 5.00 mm&lt;p&gt;
 <instance part="GND3" gate="1" x="-12.7" y="-38.1"/>
 <instance part="R1" gate="G$1" x="111.76" y="-10.16" rot="MR270"/>
 <instance part="GND9" gate="1" x="111.76" y="-17.78"/>
-<instance part="C7" gate="G$1" x="78.74" y="-91.44"/>
-<instance part="C6" gate="G$1" x="88.9" y="-12.7"/>
 <instance part="C8" gate="G$1" x="71.12" y="-93.98"/>
 <instance part="GND10" gate="1" x="76.2" y="-99.06"/>
 <instance part="U$6" gate="G$2" x="172.72" y="-124.46"/>
@@ -4384,6 +4438,8 @@ Grid 5.00 mm&lt;p&gt;
 <instance part="U$2" gate="G$1" x="45.72" y="25.4"/>
 <instance part="JP1" gate="G$1" x="33.02" y="78.74"/>
 <instance part="J1" gate="G$1" x="111.76" y="124.46"/>
+<instance part="C7" gate="G$1" x="78.74" y="-91.44"/>
+<instance part="C6" gate="G$1" x="88.9" y="-12.7"/>
 </instances>
 <busses>
 </busses>
@@ -4485,11 +4541,11 @@ Grid 5.00 mm&lt;p&gt;
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
-<pinref part="C7" gate="G$1" pin="-"/>
 <wire x1="71.12" y1="-96.52" x2="76.2" y2="-96.52" width="0.2032" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="76.2" y1="-96.52" x2="78.74" y2="-96.52" width="0.2032" layer="91"/>
 <junction x="76.2" y="-96.52"/>
+<pinref part="C7" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="DRV8301" gate="U1" pin="GND"/>
@@ -5104,9 +5160,9 @@ Grid 5.00 mm&lt;p&gt;
 <wire x1="76.2" y1="-25.4" x2="76.2" y2="-10.16" width="0.2032" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <junction x="78.74" y="-10.16"/>
+<pinref part="U$7" gate="G$1" pin="V_BATT"/>
 <pinref part="C6" gate="G$1" pin="+"/>
 <junction x="88.9" y="-10.16"/>
-<pinref part="U$7" gate="G$1" pin="V_BATT"/>
 </segment>
 <segment>
 <wire x1="172.72" y1="7.62" x2="172.72" y2="10.16" width="0.2032" layer="91"/>
@@ -5132,11 +5188,12 @@ Grid 5.00 mm&lt;p&gt;
 <pinref part="DRV8301" gate="U1" pin="PVDD1"/>
 <label x="83.82" y="-88.9" size="1.778" layer="95"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<pinref part="C7" gate="G$1" pin="+"/>
 <wire x1="60.96" y1="-88.9" x2="71.12" y2="-88.9" width="0.2032" layer="91"/>
 <wire x1="71.12" y1="-88.9" x2="78.74" y2="-88.9" width="0.2032" layer="91"/>
-<wire x1="78.74" y1="-88.9" x2="83.82" y2="-88.9" width="0.2032" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="V_BATT"/>
+<pinref part="C7" gate="G$1" pin="+"/>
+<wire x1="78.74" y1="-88.9" x2="83.82" y2="-88.9" width="0.2032" layer="91"/>
+<junction x="78.74" y="-88.9"/>
 </segment>
 <segment>
 <pinref part="VIN" gate="G$1" pin="1"/>
