@@ -4942,6 +4942,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R10" library="ASL" deviceset="RESISTOR" device="0805-RES"/>
 <part name="GND9" library="ASL" deviceset="GND" device=""/>
 <part name="C6" library="ASL" deviceset="CAP_POL" device="PTH1" value="100uF"/>
+<part name="GND12" library="ASL" deviceset="GND" device=""/>
+<part name="GND13" library="ASL" deviceset="GND" device=""/>
+<part name="C20" library="ASL" deviceset="CAP_POL" device="PTH1" value="220uF"/>
+<part name="C21" library="ASL" deviceset="CAP_POL" device="PTH1" value="220uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -5008,6 +5012,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="R10" gate="G$1" x="276.86" y="139.7" rot="R90"/>
 <instance part="GND9" gate="1" x="281.94" y="119.38"/>
 <instance part="C6" gate="G$1" x="114.3" y="35.56"/>
+<instance part="GND12" gate="1" x="261.62" y="88.9"/>
+<instance part="GND13" gate="1" x="180.34" y="129.54"/>
+<instance part="C20" gate="G$1" x="185.42" y="132.08" rot="R270"/>
+<instance part="C21" gate="G$1" x="256.54" y="91.44" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -5034,6 +5042,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="IC1" gate="G$1" pin="VDD"/>
 <wire x1="187.96" y1="127" x2="187.96" y2="132.08" width="0.2032" layer="91"/>
 <label x="187.96" y="132.08" size="1.778" layer="95"/>
+<pinref part="C20" gate="G$1" pin="+"/>
 </segment>
 <segment>
 <wire x1="254" y1="91.44" x2="254" y2="88.9" width="0.2032" layer="91"/>
@@ -5058,6 +5067,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="241.3" y1="86.36" x2="210.82" y2="86.36" width="0.1524" layer="91"/>
 <junction x="241.3" y="86.36"/>
 <wire x1="243.84" y1="86.36" x2="254" y2="86.36" width="0.2032" layer="91"/>
+<pinref part="C21" gate="G$1" pin="+"/>
+<junction x="254" y="91.44"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -5193,6 +5204,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="287.02" y1="127" x2="287.02" y2="132.08" width="0.2032" layer="91"/>
 <wire x1="281.94" y1="127" x2="281.94" y2="121.92" width="0.2032" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND13" gate="1" pin="GND"/>
+<pinref part="C20" gate="G$1" pin="-"/>
+</segment>
+<segment>
+<pinref part="GND12" gate="1" pin="GND"/>
+<pinref part="C21" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="N$6" class="1">

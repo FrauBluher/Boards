@@ -4937,9 +4937,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R6" library="pavlo" deviceset="RESISTOR" device=""/>
 <part name="R8" library="pavlo" deviceset="RESISTOR" device=""/>
 <part name="R9" library="pavlo" deviceset="RESISTOR" device=""/>
-<part name="C18" library="ASL" deviceset="CAP_POL" device="PTH4"/>
-<part name="C19" library="ASL" deviceset="CAP" device="1206"/>
-<part name="R10" library="ASL" deviceset="RESISTOR" device="0805-RES"/>
+<part name="C18" library="ASL" deviceset="CAP_POL" device="PTH4" value="1000uF"/>
+<part name="C19" library="ASL" deviceset="CAP" device="1206" value="10nF"/>
+<part name="R10" library="ASL" deviceset="RESISTOR" device="0805-RES" value="3.3Ohm"/>
 <part name="GND9" library="ASL" deviceset="GND" device=""/>
 <part name="C6" library="ASL" deviceset="CAP_POL" device="PTH1" value="100uF"/>
 <part name="GND12" library="ASL" deviceset="GND" device=""/>

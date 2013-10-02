@@ -4819,16 +4819,6 @@ Source:</description>
 <pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="M2"/>
-<wire x1="210.82" y1="78.74" x2="213.36" y2="78.74" width="0.2032" layer="91"/>
-<label x="213.36" y="78.74" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="M1"/>
-<wire x1="210.82" y1="81.28" x2="213.36" y2="81.28" width="0.2032" layer="91"/>
-<label x="213.36" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R12" gate="G$1" pin="2"/>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="220.98" y1="71.12" x2="220.98" y2="68.58" width="0.2032" layer="91"/>
@@ -4942,11 +4932,6 @@ Source:</description>
 <pinref part="U$11" gate="G$1" pin="VCC3V3"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="M3"/>
-<wire x1="210.82" y1="76.2" x2="213.36" y2="76.2" width="0.2032" layer="91"/>
-<label x="213.36" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="RESET_A"/>
@@ -5246,6 +5231,16 @@ Source:</description>
 <wire x1="198.12" y1="60.96" x2="200.66" y2="60.96" width="0.2032" layer="91"/>
 <label x="200.66" y="60.96" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="M1"/>
+<wire x1="210.82" y1="81.28" x2="213.36" y2="81.28" width="0.2032" layer="91"/>
+<label x="213.36" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="M2"/>
+<wire x1="210.82" y1="78.74" x2="213.36" y2="78.74" width="0.2032" layer="91"/>
+<label x="213.36" y="78.74" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$13" class="0">
 <segment>
@@ -5323,6 +5318,18 @@ Source:</description>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="104.14" x2="167.64" y2="104.14" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="VREG" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="VREG"/>
+<wire x1="180.34" y1="109.22" x2="175.26" y2="109.22" width="0.2032" layer="91"/>
+<label x="167.64" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="M3"/>
+<wire x1="210.82" y1="76.2" x2="213.36" y2="76.2" width="0.2032" layer="91"/>
+<label x="213.36" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

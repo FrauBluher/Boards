@@ -4627,6 +4627,7 @@ Source:</description>
 <part name="C15" library="ASL" deviceset="CAP" device="1206" value="1uF"/>
 <part name="C16" library="ASL" deviceset="CAP" device="1206" value="1uF"/>
 <part name="GND8" library="ASL" deviceset="GND" device=""/>
+<part name="C17" library="ASL" deviceset="CAP" device="1206" value="100nF"/>
 </parts>
 <sheets>
 <sheet>
@@ -4692,6 +4693,7 @@ Source:</description>
 <instance part="C15" gate="G$1" x="233.68" y="86.36" rot="R180"/>
 <instance part="C16" gate="G$1" x="226.06" y="88.9" rot="R180"/>
 <instance part="GND8" gate="1" x="241.3" y="73.66"/>
+<instance part="C17" gate="G$1" x="172.72" y="109.22" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -5241,6 +5243,15 @@ Source:</description>
 <wire x1="210.82" y1="78.74" x2="213.36" y2="78.74" width="0.2032" layer="91"/>
 <label x="213.36" y="78.74" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="109.22" x2="165.1" y2="109.22" width="0.2032" layer="91"/>
+<label x="154.94" y="109.22" size="1.778" layer="95"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="109.22" x2="162.56" y2="109.22" width="0.2032" layer="91"/>
+<wire x1="170.18" y1="104.14" x2="165.1" y2="104.14" width="0.2032" layer="91"/>
+<wire x1="165.1" y1="109.22" x2="165.1" y2="104.14" width="0.2032" layer="91"/>
+</segment>
 </net>
 <net name="N$13" class="0">
 <segment>
@@ -5314,17 +5325,12 @@ Source:</description>
 <pinref part="R7" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="104.14" x2="167.64" y2="104.14" width="0.2032" layer="91"/>
-</segment>
-</net>
 <net name="VREG" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="VREG"/>
 <wire x1="180.34" y1="109.22" x2="175.26" y2="109.22" width="0.2032" layer="91"/>
 <label x="167.64" y="109.22" size="1.778" layer="95"/>
+<pinref part="C17" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="M3"/>

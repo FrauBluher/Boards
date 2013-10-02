@@ -4608,7 +4608,6 @@ Source:</description>
 <part name="GND5" library="CMPE118lib" deviceset="GND" device=""/>
 <part name="U3" library="ASL" deviceset="LP2950" device="ACZ" technology="-3.3"/>
 <part name="C2" library="ASL" deviceset="CAP" device="1206" value="2.2uF"/>
-<part name="R6" library="ASL" deviceset="RESISTOR" device="0805-RES" value="1 Ohm"/>
 <part name="R10" library="ASL" deviceset="RESISTOR" device="1206" value="1mOhm"/>
 <part name="R11" library="ASL" deviceset="RESISTOR" device="1206" value="1mOhm"/>
 <part name="R12" library="ASL" deviceset="RESISTOR" device="1206" value="1mOhm"/>
@@ -4674,7 +4673,6 @@ Source:</description>
 <instance part="GND5" gate="1" x="187.96" y="58.42"/>
 <instance part="U3" gate="G$1" x="154.94" y="38.1"/>
 <instance part="C2" gate="G$1" x="165.1" y="33.02"/>
-<instance part="R6" gate="G$1" x="193.04" y="60.96"/>
 <instance part="R10" gate="G$1" x="215.9" y="66.04"/>
 <instance part="R11" gate="G$1" x="215.9" y="68.58"/>
 <instance part="R12" gate="G$1" x="215.9" y="71.12"/>
@@ -4816,9 +4814,7 @@ Source:</description>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<junction x="187.96" y="60.96"/>
-<pinref part="R6" gate="G$1" pin="1"/>
+<label x="200.66" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
@@ -4848,6 +4844,12 @@ Source:</description>
 <wire x1="233.68" y1="78.74" x2="241.3" y2="78.74" width="0.2032" layer="91"/>
 <wire x1="241.3" y1="78.74" x2="241.3" y2="76.2" width="0.2032" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="AGND"/>
+<wire x1="180.34" y1="111.76" x2="175.26" y2="111.76" width="0.2032" layer="91"/>
+<label x="167.64" y="111.76" size="1.778" layer="95"/>
+<wire x1="175.26" y1="111.76" x2="175.26" y2="121.92" width="0.2032" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="1">
@@ -5226,16 +5228,6 @@ Source:</description>
 </segment>
 </net>
 <net name="AGND" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="AGND"/>
-<wire x1="180.34" y1="111.76" x2="175.26" y2="111.76" width="0.2032" layer="91"/>
-<label x="167.64" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="198.12" y1="60.96" x2="200.66" y2="60.96" width="0.2032" layer="91"/>
-<label x="200.66" y="60.96" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="M1"/>
 <wire x1="210.82" y1="81.28" x2="213.36" y2="81.28" width="0.2032" layer="91"/>
