@@ -5340,6 +5340,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="281.94" y1="144.78" x2="287.02" y2="144.78" width="0.2032" layer="91"/>
 <wire x1="287.02" y1="144.78" x2="287.02" y2="139.7" width="0.2032" layer="91"/>
 <wire x1="281.94" y1="144.78" x2="281.94" y2="149.86" width="0.2032" layer="91"/>
+<label x="284.48" y="152.4" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="PVDD_C_2"/>

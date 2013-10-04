@@ -6153,7 +6153,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="R6" library="ASL" deviceset="RESISTOR" device="0805-RES" value="OC_ADJ"/>
 <part name="R7" library="ASL" deviceset="RESISTOR" device="0805-RES" value="1"/>
 <part name="C12" library="ASL" deviceset="CAP" device="0805" value="100nF"/>
-<part name="C13" library="ASL" deviceset="CAP_POL" device="PTH4" value="330uF"/>
+<part name="C13" library="ASL" deviceset="CAP_POL" device="PTH4" value="47uF"/>
 <part name="C14" library="ASL" deviceset="CAP" device="0805" value="1uF"/>
 <part name="C15" library="ASL" deviceset="CAP" device="0805" value="1uF"/>
 <part name="C16" library="ASL" deviceset="CAP" device="0805" value=".1uF"/>

@@ -6564,7 +6564,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <segment>
 <pinref part="U$1" gate="A" pin="*MCLR"/>
 <wire x1="162.56" y1="55.88" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
-<label x="149.86" y="55.88" size="1.778" layer="95"/>
+<label x="152.4" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PGD" class="2">
@@ -6701,7 +6701,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <segment>
 <pinref part="U$1" gate="A" pin="RPI47/PWM1L/T5CK/RB15"/>
 <wire x1="162.56" y1="66.04" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
-<label x="154.94" y="66.04" size="1.778" layer="95"/>
+<label x="149.86" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESET_C" class="0">
@@ -6756,7 +6756,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <segment>
 <pinref part="U$1" gate="A" pin="RPI46/PWM1H/T3CK/RB14"/>
 <wire x1="162.56" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
-<label x="154.94" y="68.58" size="1.778" layer="95"/>
+<label x="149.86" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM_C" class="0">
@@ -6792,7 +6792,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <segment>
 <pinref part="U$1" gate="A" pin="TDI/RA7"/>
 <wire x1="162.56" y1="71.12" x2="160.02" y2="71.12" width="0.1524" layer="91"/>
-<label x="154.94" y="71.12" size="1.778" layer="95"/>
+<label x="149.86" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$21" class="0">

@@ -5063,6 +5063,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="R9" library="ASL" deviceset="RESISTOR" device="0805-RES" value="18.2k"/>
 <part name="R11" library="ASL" deviceset="RESISTOR" device="0805-RES" value="158k"/>
 <part name="L6" library="DRV83x2Support" deviceset="LQM31PN3R3M00L" device=""/>
+<part name="C28" library="ASL" deviceset="CAP" device="1206"/>
 </parts>
 <sheets>
 <sheet>
@@ -5137,6 +5138,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="NAME" x="287.02" y="-99.06" size="1.778" layer="95"/>
 <attribute name="VALUE" x="287.02" y="-96.52" size="1.778" layer="96"/>
 </instance>
+<instance part="C28" gate="G$1" x="393.7" y="50.8" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -5212,7 +5214,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="383.54" y1="53.34" x2="386.08" y2="53.34" width="0.1524" layer="91"/>
+<label x="386.08" y="53.34" size="1.778" layer="95" rot="R90"/>
+<pinref part="C28" gate="G$1" pin="2"/>
+<wire x1="383.54" y1="53.34" x2="396.24" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="53.34" x2="396.24" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="EPAD"/>
@@ -5557,7 +5562,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <net name="N$14" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="VCAP"/>
-<wire x1="365.76" y1="50.8" x2="370.84" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="50.8" x2="388.62" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="C28" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="RESET_A" class="0">
@@ -5813,6 +5819,90 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="205.74" y1="-99.06" x2="241.3" y2="-99.06" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="-99.06" x2="241.3" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="FB"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="RP118/RG6"/>
+<wire x1="162.56" y1="63.5" x2="157.48" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="PGED1/AN5/C1IN1-/RP35/RB3"/>
+<wire x1="162.56" y1="27.94" x2="160.02" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="FLT32/SCL2/RP36/RB4"/>
+<wire x1="162.56" y1="-7.62" x2="160.02" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="PGED2/ASDA2/RP37/RB5"/>
+<wire x1="365.76" y1="17.78" x2="368.3" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="PGEC2/ASCL2/RP38/RB6"/>
+<wire x1="365.76" y1="20.32" x2="368.3" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="RP39/INT0/RB7"/>
+<wire x1="365.76" y1="25.4" x2="368.3" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="TMS/ASDA1/RP41/RB9"/>
+<wire x1="365.76" y1="33.02" x2="368.3" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="RP54/RC6"/>
+<wire x1="365.76" y1="35.56" x2="368.3" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="RP55/RC7"/>
+<wire x1="365.76" y1="38.1" x2="368.3" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="RP56/RC8"/>
+<wire x1="365.76" y1="40.64" x2="368.3" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="RP97/RF1"/>
+<wire x1="365.76" y1="58.42" x2="368.3" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="RPI46/PWM1H/T3CK/RB14"/>
+<wire x1="162.56" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="RPI44/PWM2H/RB12"/>
+<wire x1="365.76" y1="66.04" x2="368.3" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="U$1" gate="A" pin="RP42/PWM3H/RB10"/>
+<wire x1="365.76" y1="60.96" x2="368.3" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
